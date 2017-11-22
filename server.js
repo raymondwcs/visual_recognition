@@ -37,10 +37,9 @@ app.post('/upload', function(req, res) {
     }
     else {
       console.log(JSON.stringify(result, null, 2));
-      //res.send(JSON.stringify(result, null, 2));
-      for (var i=0; i<result.images.length; i++) {
-        for (var j=0; j<result.images[i].classifiers.length; j++) {
-          for (var k=0; k<result.images[i].classifiers[j].classes.length; k++){
+      for (var i in result.images) {
+        for (var j in result.images[i].classifiers) {
+          for (var k in result.images[i].classifiers[j].classes){
             cr.push(result.images[i].classifiers[j].classes[k]);
           }
         }
