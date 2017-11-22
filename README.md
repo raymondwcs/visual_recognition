@@ -1,4 +1,4 @@
-COMPS381F - IBM Watson Visual Recognition Web Services [Reference]
+#COMPS381F - IBM Watson Visual Recognition Web Service [Reference]
 
 1. Go to the page below to learn more about IBM Watson Visual Recognition Web Services.
    ```
