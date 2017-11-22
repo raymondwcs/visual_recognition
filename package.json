@@ -3,13 +3,13 @@
 	"description": "COMPS381F - IBM Bluemix Example",
 	"version": "0.0.1",
 	"dependencies": {
-    "express": "latest",
-    "express-fileupload": "latest",
+		"express": "latest",
+		"express-fileupload": "latest",
 		"body-parser": "latest",
 		"watson-developer-cloud": "latest",
 		"ejs": "latest"
 	},
-	"scripts" : {
+	"scripts": {
 		"start": "node server.js"
 	},
 	"engine": "*"

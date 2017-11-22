@@ -17,7 +17,7 @@ app.use(fileUpload());
 app.use(bodyParser.json());
 
 app.get('/',function(req,res) {
-  res.render('form',{})
+  res.render('form',{});
 })
 app.post('/upload', function(req, res) {
   if (!req.files) {
@@ -52,6 +52,6 @@ app.post('/upload', function(req, res) {
   });
 });
 
-app.listen(8099, function() {
+app.listen(process.env.PORT || 8099, function() {
     console.log('Server running...');
 });
