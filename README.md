@@ -5,7 +5,7 @@
    https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
    ```
 
-2. Follow the instructions in the **Before you begin** section to obtain an `api-key`.
+2. Follow the instructions in the **Before you begin** section of **Getting started tutorial** to obtain an `api-key`.
 
 3. Follow the instructions in the **Step 1: Classify an image** section to classify an image.
 
