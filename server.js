@@ -1,8 +1,8 @@
-var watson = require('watson-developer-cloud');
-var visual_recognition = watson.visual_recognition({
-  api_key: '',
-  version: 'v3',
-  version_date: '2016-05-20'
+var VisualRecognitionV3 = require('watson-developer-cloud/visual-recognition/v3');
+
+var visualRecognition = new VisualRecognitionV3({
+  version: '2018-03-19',
+  iam_apikey: ''
 });
 
 var express = require('express');
@@ -29,7 +29,7 @@ app.post('/upload', function(req, res) {
     images_file: req.files.images_file.data
   };
 
-  visual_recognition.classify(params, function(err,result) {
+  visualRecognition.classify(params, function(err,result) {
     var cr = [];  // classifier result
     if (err) {
       console.log(err);
